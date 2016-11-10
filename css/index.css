@@ -1040,8 +1040,20 @@ nav#footer p {
   box-sizing: content-box;
 }
 @media (max-width: 768px) {
-  .xmjy-img {
-    display: none;
+  .xmjys a {
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    float: left;
+  }
+  .xmjys a .xmjy-img {
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    float: left;
+    margin-left: 2%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    transition: all 1s ease-out;
   }
   .xmjy {
     width: 100%;
@@ -1068,7 +1080,7 @@ nav#footer p {
   }
   .xmjy .xmjy-cont .xmjy-cont-a {
     float: left;
-    width: 100%;
+    width: 60px;
     text-align: left;
     color: #000;
     font-weight: bold;
@@ -1080,6 +1092,12 @@ nav#footer p {
   }
 }
 @media (min-width: 768px) {
+  .xmjys a {
+    width: 35%;
+    overflow: hidden;
+    display: block;
+    float: left;
+  }
   .xmjy-img {
     overflow: hidden;
     display: block;
@@ -1150,12 +1168,6 @@ nav#footer p {
   border-top: 1px solid #999;
   padding: 25px 0;
   overflow: hidden;
-}
-.xmjys a {
-  width: 35%;
-  overflow: hidden;
-  display: block;
-  float: left;
 }
 .xmjy-conts {
   width: 90%;
