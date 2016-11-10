@@ -77,7 +77,10 @@ ol {
   background-color: #000;
 }
 .navbar-custom .navbar-brand i.fa {
-  color: #F4D03F;
+  color: #FFF;
+}
+.navbar-custom .navbar-brand i.fa:hover {
+  color: #F7E612;
 }
 .navbar-custom .navbar-brand:focus {
   outline: 0;
@@ -1036,6 +1039,111 @@ nav#footer p {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
 }
+@media (max-width: 768px) {
+  .xmjy-img {
+    display: none;
+  }
+  .xmjy {
+    width: 100%;
+    float: left;
+    margin-left: 3%;
+    margin-top: 2%;
+    margin: 0 auto;
+  }
+  .xmjy .xmjy-tab {
+    height: auto;
+    overflow: hidden;
+  }
+  .xmjy .xmjy-tab .one {
+    width: 100%;
+    text-align: left;
+  }
+  .xmjy .xmjy-tab .two {
+    width: 100%;
+    text-align: left;
+  }
+  .xmjy .xmjy-cont {
+    height: auto;
+    overflow: hidden;
+  }
+  .xmjy .xmjy-cont .xmjy-cont-a {
+    float: left;
+    width: 60px;
+    text-align: left;
+    color: #000;
+    font-weight: bold;
+  }
+  .xmjy .xmjy-cont .xmjy-b {
+    float: left;
+    text-align: left;
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .xmjy-img {
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    float: left;
+    margin-left: 2%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    transition: all 1s ease-out;
+  }
+  .xmjy-img:hover {
+    display: block;
+    transform: scale(1.2, 1.2);
+  }
+  .xmjy {
+    width: 55%;
+    float: left;
+    margin-left: 3%;
+    margin-top: 2%;
+  }
+  .xmjy .xmjy-tab {
+    height: auto;
+    overflow: hidden;
+  }
+  .xmjy .xmjy-tab .one {
+    width: 40%;
+    float: left;
+    text-align: left;
+  }
+  .xmjy .xmjy-tab .two {
+    width: 60%;
+    float: right;
+    text-align: right;
+  }
+  .xmjy .xmjy-cont {
+    height: auto;
+    overflow: hidden;
+  }
+  .xmjy .xmjy-cont .xmjy-cont-a {
+    float: left;
+    width: 60px;
+    text-align: left;
+    color: #000;
+    font-weight: bold;
+  }
+  .xmjy .xmjy-cont .xmjy-b {
+    float: left;
+    text-align: left;
+    width: 100%;
+  }
+  .xmjy-conts {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .xmjy-conts .xmjy-cont-c {
+    width: 200px;
+    float: left;
+    text-align: left;
+  }
+  .xmjy-conts .xmjy-d {
+    float: left;
+    text-align: left;
+    width: 78%;
+  }
+}
 .xmjys {
   width: 90%;
   margin: 0 auto;
@@ -1048,69 +1156,6 @@ nav#footer p {
   overflow: hidden;
   display: block;
   float: left;
-}
-.xmjys .xmjy-img {
-  overflow: hidden;
-  display: inline-block;
-  width: 100%;
-  float: left;
-  margin-left: 2%;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
-  transition: all 1s ease-out;
-}
-.xmjys .xmjy-img:hover {
-  display: block;
-  transform: scale(1.2, 1.2);
-}
-.xmjy {
-  width: 55%;
-  float: left;
-  margin-left: 3%;
-  margin-top: 2%;
-}
-.xmjy .xmjy-tab {
-  height: auto;
-  overflow: hidden;
-}
-.xmjy .xmjy-tab .one {
-  width: 40%;
-  float: left;
-  text-align: left;
-}
-.xmjy .xmjy-tab .two {
-  width: 60%;
-  float: right;
-  text-align: right;
-}
-.xmjy .xmjy-cont {
-  height: auto;
-  overflow: hidden;
-}
-.xmjy .xmjy-cont .xmjy-cont-a {
-  float: left;
-  width: 60px;
-  text-align: left;
-  color: #000;
-  font-weight: bold;
-}
-.xmjy .xmjy-cont .xmjy-b {
-  float: left;
-  text-align: left;
-  width: 100%;
-}
-.xmjy .xmjy-conts {
-  margin: 0 auto;
-  width: 100%;
-}
-.xmjy .xmjy-conts .xmjy-cont-c {
-  width: 200px;
-  float: left;
-  text-align: left;
-}
-.xmjy .xmjy-conts .xmjy-d {
-  float: left;
-  text-align: left;
-  width: 78%;
 }
 .xmjy-conts {
   width: 90%;

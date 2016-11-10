@@ -74,7 +74,10 @@ ul, ol {
 }
 
 .navbar-custom .navbar-brand i.fa {
-  color: #F4D03F;
+  color: #FFF;
+}
+.navbar-custom .navbar-brand i.fa:hover{
+  color:#F7E612;
 }
 .navbar-custom .navbar-brand:focus {
   outline: 0;
@@ -990,21 +993,52 @@ nav#footer p {
 }
 
 //项目经验
-.xmjys{
-  width:90%;
-  margin:0 auto;
-  border-top:1px solid #999;
-  padding:25px 0;
-  overflow: hidden;
-  a{
-    width: 35%;
-    overflow: hidden;
-    display:block;
+
+@media (max-width:768px) {
+  .xmjy-img{display: none;}
+
+  .xmjy{
+    width:100%;
     float: left;
+    margin-left:3%;
+    margin-top:2%;
+    margin:0 auto;
+    .xmjy-tab{
+      height:auto;overflow:hidden;
+      .one{
+        width:100%;
+
+        text-align: left;
+      }
+      .two{
+        width:100%;
+
+        text-align: left;
+      }
+    }
+    .xmjy-cont{
+      height:auto;overflow: hidden;
+
+      .xmjy-cont-a{
+        float: left;
+        width:60px;
+        text-align:left;
+        color:#000;
+        font-weight: bold;
+      }
+      .xmjy-b{
+        float:left;
+        text-align: left;
+        width:100%;
+      }
+    }
   }
+
+}
+@media (min-width:768px) {
   .xmjy-img{
     overflow: hidden;
-    display: inline-block;
+    display:block;
     width:100%;
     float: left;
     margin-left:2%;
@@ -1015,41 +1049,44 @@ nav#footer p {
     display: block;
     transform:scale(1.2,1.2);
   }
-}
-.xmjy{
-  width:55%;
-  float: left;
-  margin-left:3%;
-  margin-top:2%;
-  .xmjy-tab{
-    height:auto;overflow:hidden;
-    .one{
-      width:40%;
-      float: left;
-      text-align: left;
-    }
-    .two{
-      width:60%;
-      float: right;
-      text-align: right;
-    }
-  }
-  .xmjy-cont{
-    height:auto;overflow: hidden;
 
-    .xmjy-cont-a{
-      float: left;
-      width:60px;
-      text-align:left;
-      color:#000;
-      font-weight: bold;
+  .xmjy{
+    width:55%;
+    float: left;
+    margin-left:3%;
+    margin-top:2%;
+    .xmjy-tab{
+      height:auto;overflow:hidden;
+      .one{
+        width:40%;
+        float: left;
+        text-align: left;
+      }
+      .two{
+        width:60%;
+        float: right;
+        text-align: right;
+      }
     }
-    .xmjy-b{
-      float:left;
-      text-align: left;
-      width:100%;
+    .xmjy-cont{
+      height:auto;overflow: hidden;
+
+      .xmjy-cont-a{
+        float: left;
+        width:60px;
+        text-align:left;
+        color:#000;
+        font-weight: bold;
+      }
+      .xmjy-b{
+        float:left;
+        text-align: left;
+        width:100%;
+      }
     }
-  }
+}
+
+
   .xmjy-conts{
     margin:0 auto;
     width:100%;
@@ -1065,7 +1102,21 @@ nav#footer p {
     }
   }
 }
+.xmjys{
+  width:90%;
+  margin:0 auto;
+  border-top:1px solid #999;
+  padding:25px 0;
+  overflow: hidden;
 
+  a{
+    width: 35%;
+    overflow: hidden;
+    display:block;
+    float: left;
+  }
+
+}
 .xmjy-conts{
   width:90%;
   height:auto;overflow: hidden;
